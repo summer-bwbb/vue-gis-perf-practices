@@ -1,0 +1,6 @@
+interface:
+  display_name: "Vue GIS 性能诊断"
+  short_description: "Vue 3 + GIS 性能诊断与代码分析 / Vue 3 + GIS performance diagnostics & code analysis"
+  default_prompt: "Use $vue-gis-perf-practices to run a full performance diagnostic on this project and generate a report."
+policy:
+  allow_implicit_invocation: true

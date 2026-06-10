@@ -1,0 +1,13 @@
+{
+  "name": "vue-gis-perf-practices",
+  "version": "1.0.0",
+  "description": "Vue 3 + GIS performance optimization rules and diagnostic report generator for Cesium/OpenLayers/Three.js/ECharts/SSE projects.",
+  "author": "custom",
+  "date": "2026-06-08",
+  "references": [
+    "https://vuejs.org/guide/best-practices/performance.html",
+    "https://cesium.com/learn/cesiumjs-learn/cesiumjs-best-practices/",
+    "https://vitejs.dev/guide/performance",
+    "https://vuejs.org/guide/extras/reactivity-in-depth.html#how-reactivity-works-in-vue"
+  ]
+}
