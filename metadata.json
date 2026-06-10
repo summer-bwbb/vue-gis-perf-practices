@@ -6,7 +6,7 @@
   "date": "2026-06-08",
   "references": [
     "https://vuejs.org/guide/best-practices/performance.html",
-    "https://cesium.com/learn/cesiumjs-learn/cesiumjs-best-practices/",
+    "https://github.com/CesiumGS/cesium/blob/main/Documentation/Contributors/CodingGuide/README.md",
     "https://vitejs.dev/guide/performance",
     "https://vuejs.org/guide/extras/reactivity-in-depth.html#how-reactivity-works-in-vue"
   ]
