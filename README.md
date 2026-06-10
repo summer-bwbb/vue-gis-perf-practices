@@ -1,6 +1,6 @@
 # vue-gis-perf-practices
 
-[![Agent Skill](https://img.shields.io/badge/Agent-Skill-6366f1)](https://cursor.com/docs/context/skills)
+[![Agent Skill](https://img.shields.io/badge/Agent-Skill-6366f1)](SKILL.md)
 [![Vue 3](https://img.shields.io/badge/Vue-3-42b883?logo=vue.js&logoColor=white)](https://vuejs.org/)
 [![GIS](https://img.shields.io/badge/GIS-3D%20%26%20Mapping-2ea043)](https://en.wikipedia.org/wiki/Geographic_information_system)
 [![Cesium](https://img.shields.io/badge/Cesium-JS-6CADFF?logo=cesium&logoColor=white)](https://cesium.com/)
@@ -14,7 +14,7 @@
 
 ### Overview
 
-**vue-gis-perf-practices** is a [Cursor Agent Skill](https://cursor.com/docs/context/skills) for **Vue 3 + GIS** projects. It provides structured performance rules, code review workflows, and full-project diagnostic reports for stacks that use **Cesium**, **OpenLayers**, **Three.js**, **ECharts**, **SSE/WebSocket**, and other heavy 3D/GIS libraries.
+**vue-gis-perf-practices** is an **Agent Skill** for **Vue 3 + GIS** projects. It follows the standard Agent Skills format (`SKILL.md` entry point, progressive rule loading) and can be used with any AI coding agent that supports skills. It provides structured performance rules, code review workflows, and full-project diagnostic reports for stacks that use **Cesium**, **OpenLayers**, **Three.js**, **ECharts**, **SSE/WebSocket**, and other heavy 3D/GIS libraries.
 
 The skill follows a **search-first, progressive disclosure** approach: it never bulk-loads all rules. Instead, it detects patterns in your codebase and loads only the rules that apply.
 
@@ -62,31 +62,19 @@ Report dimensions include: GIS memory, bundle size, realtime connections, Vue re
 
 ### Installation
 
-#### Cursor IDE
-
 1. Clone this repository:
 
 ```bash
 git clone https://github.com/summer-bwbb/vue-gis-perf-practices.git
 ```
 
-2. Copy the skill folder into your Cursor skills directory:
+2. Copy the entire `vue-gis-perf-practices` folder into your agent's skills directory. Refer to your agent's documentation for the correct path.
 
 ```bash
-# macOS / Linux
-cp -r vue-gis-perf-practices ~/.cursor/skills/
-
-# Windows (PowerShell)
-Copy-Item -Recurse vue-gis-perf-practices "$env:USERPROFILE\.cursor\skills\"
+cp -r vue-gis-perf-practices /path/to/your/agent/skills/
 ```
 
-3. In Cursor chat, invoke the skill explicitly or let it auto-trigger on performance-related requests.
-
-#### Codex CLI
-
-```bash
-cp -r vue-gis-perf-practices ~/.codex/skills/
-```
+3. Invoke the skill by name or through performance-related requests—the agent loads `SKILL.md` and applies the matching rules automatically.
 
 ### Usage Examples
 

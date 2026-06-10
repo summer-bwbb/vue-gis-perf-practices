@@ -1,6 +1,6 @@
 # vue-gis-perf-practices
 
-[![Agent Skill](https://img.shields.io/badge/Agent-Skill-6366f1)](https://cursor.com/docs/context/skills)
+[![Agent Skill](https://img.shields.io/badge/Agent-Skill-6366f1)](SKILL.md)
 [![Vue 3](https://img.shields.io/badge/Vue-3-42b883?logo=vue.js&logoColor=white)](https://vuejs.org/)
 [![GIS](https://img.shields.io/badge/GIS-3D%20%26%20Mapping-2ea043)](https://en.wikipedia.org/wiki/Geographic_information_system)
 [![Cesium](https://img.shields.io/badge/Cesium-JS-6CADFF?logo=cesium&logoColor=white)](https://cesium.com/)
@@ -14,7 +14,7 @@
 
 ### 簡介
 
-**vue-gis-perf-practices** 是一個面向 **Vue 3 + GIS** 技術棧的 [Cursor Agent Skill](https://cursor.com/docs/context/skills)。它提供結構化的效能優化規則、程式碼審查工作流，以及全專案效能診斷報告，適用於使用 **Cesium**、**OpenLayers**、**Three.js**、**ECharts**、**SSE/WebSocket** 等重型 3D/GIS 函式庫的專案。
+**vue-gis-perf-practices** 是一個面向 **Vue 3 + GIS** 技術棧的 **Agent Skill**。它遵循標準 Agent Skills 格式（以 `SKILL.md` 為入口、按需載入規則），可在任何支援 skills 的 AI 程式設計助手中使用。它提供結構化的效能優化規則、程式碼審查工作流，以及全專案效能診斷報告，適用於使用 **Cesium**、**OpenLayers**、**Three.js**、**ECharts**、**SSE/WebSocket** 等重型 3D/GIS 函式庫的專案。
 
 Skill 採用 **先搜尋、按需載入** 策略：不會一次性載入全部規則，而是根據程式碼中的實際模式，僅載入匹配的規則檔案。
 
@@ -62,31 +62,19 @@ Skill 採用 **先搜尋、按需載入** 策略：不會一次性載入全部�
 
 ### 安裝
 
-#### Cursor IDE
-
 1. 克隆倉庫：
 
 ```bash
 git clone https://github.com/summer-bwbb/vue-gis-perf-practices.git
 ```
 
-2. 將 skill 目錄複製到 Cursor skills 目錄：
+2. 將整個 `vue-gis-perf-practices` 資料夾複製到你的 Agent 的 skills 目錄，具體路徑請參閱所使用 Agent 的文件。
 
 ```bash
-# macOS / Linux
-cp -r vue-gis-perf-practices ~/.cursor/skills/
-
-# Windows (PowerShell)
-Copy-Item -Recurse vue-gis-perf-practices "$env:USERPROFILE\.cursor\skills\"
+cp -r vue-gis-perf-practices /path/to/your/agent/skills/
 ```
 
-3. 在 Cursor 對話中顯式呼叫 skill，或在效能相關請求時讓其自動觸發。
-
-#### Codex CLI
-
-```bash
-cp -r vue-gis-perf-practices ~/.codex/skills/
-```
+3. 透過 skill 名稱或效能相關請求呼叫——Agent 會載入 `SKILL.md` 並自動套用匹配的規則。
 
 ### 使用範例
 
